@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+   
+}
+
+#aboutme{
+  width: 30rem;
+  height: 40rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  padding: 10px; 
+  background-color: black;
+  position: absolute;
+}
+
+#aboutme:hover{
+  opacity: 0;
+  transition: 3s;
+  
+}
+
+.neons {
+   margin-top: 5rem;
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: 50px;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333, 0 0 30px #ff3333, 0 0 40px #ff3333, 0 0 50px #ff3333, 0 0 60px #ff3333, 0 0 70px #ff3333, 0 0 90px #ff3333;
+  }
+
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #ff3333, 0 0 30px #ff3333, 0 0 40px #ff3333, 0 0 50px #ff3333, 0 0 60px #ff3333, 0 0 70px #ff3333, 0 0 80px #ff3333, 0 1 90px #ff3333;
+  }
+}

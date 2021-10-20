@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+#con-bg {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 450px;
+  flex-direction: column;
+}
+
+
+
+body {
+  padding: 0;
+  background-color: black;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#main-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7em;
+  
+}
+
+#con-1{
+  opacity: 0;
+  margin-bottom: 1em;
+}
+ #con-1:hover{
+   opacity: 100%;
+   transition: 2s;
+ }
+
+ #know-me{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   color: rgb(255, 251, 251);
+   font-weight: bolder;
+   font-size: 30px;
+   word-spacing: 0.4em;
+
+ }
+
+#myprof-bg {
+  width: 100%;
+  padding: 0;
+}
+
+.nav-link{
+  margin-left: 4em;
+  
+}
+
+
+.active{
+  text-decoration: underline 3px rgb(255, 0, 0);
+  text-underline-offset: 0.6em;
+  
+  
+  
+}
+
+.nav-link:hover{
+  letter-spacing: 0.4em;
+    transition: 0.5s;
+    transition-duration: 1s;
+    transform: scale(1.2);
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+    
+    
+}
+
+.collapse{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-intro{
+  position: absolute;
+  color: rgba(255, 255, 255, 0.842);
+  left: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(187, 187, 187, 0);
+  padding: 10px;
+  
+  flex-direction: column; 
+}
+
+.box1{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.wrapper {
+  height: 20vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 30ch;
+  animation: typing 5s  ease-in-out infinite alternate , blink .5s  ease-in-out infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+    
+  }
+  
+  }
+
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+/* Portfolio*/
+#con-project{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 5em;
+  flex-direction: row;
+}
+
+#card-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.title{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 5em;
+}
+  
+.btn-shine{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 30px;
+  text-decoration: none;
+  white-space: nowrap;
+  text-decoration: underline 5px red;
+  text-underline-offset: 0.4em;
+
+}
+.flap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.flap::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: rgb(12, 12, 12);
+  background-position: 100px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+.flap::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background:  rgb(12, 12, 12);
+  background-position: -200px;
+  background-repeat: no-repeat;
+  transition: 1s;
+}
+
+#card-project:hover .flap::after {
+  transform: translatex(300px);
+}
+#card-project:hover .flap::before {
+  transform: translatex(-300px);
+} 
+@keyframes shine{
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 180px;
+  }
+  100%{
+    background-position: 180px;
+  }
+}
+
+#proj-title{
+  position: absolute;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+#proj-title:hover{
+  opacity: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .collapse{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+  
+  }
+  #con-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    flex-direction: column;
+  }
+  #card-project{
+    margin-top: 3em;
+  }
+
+
+}
